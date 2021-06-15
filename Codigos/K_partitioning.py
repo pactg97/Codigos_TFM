@@ -10,7 +10,7 @@ import numpy as np
 import gurobipy as gp
 from gurobipy import GRB
 
-matriz_C=open('distancias_baviera.txt').read()
+matriz_C=open('Datos/distancias_baviera.txt').read()
 matriz_C = [item.split() for item in matriz_C.split('\n')[:-1]]
 matriz_C=np.array([[int(float(j)) for j in i] for i in matriz_C])
 
@@ -81,4 +81,4 @@ def K_partitioning_cost(C,K):
     except AttributeError:
         print('Encountered an attribute error')
 
-print(K_partitioning_cost(matriz,8))
+print(K_partitioning_cost(matriz,4))

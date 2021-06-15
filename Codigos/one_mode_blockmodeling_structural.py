@@ -129,13 +129,13 @@ kansas_SAR= np.array([[0,1,1,1,0,1,1,0,1,0,1,0,0,0,1,1,1,0,0,1],
                       [1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0]])
 ## En el archivo .txt es necesario dejar una línea en blanco debajo de la matriz
 ## sino no lee la ultima fila de la matriz.
-sharpstone=open('Sharpstone.txt').read()
+sharpstone=open('Datos/Sharpstone.txt').read()
 sharpstone = [item.split() for item in sharpstone.split('\n')[:-1]]
 sharpstone=np.array([[int(j) for j in i] for i in sharpstone])
-polactor=open('PolActor.txt').read()
+polactor=open('Datos/PolActor.txt').read()
 polactor = [item.split() for item in polactor.split('\n')[:-1]]
 polactor=np.array([[int(j) for j in i] for i in polactor])
-baker=open('baker.txt').read()
+baker=open('Datos/baker.txt').read()
 baker = [item.split() for item in baker.split('\n')[:-1]]
 baker=np.array([[int(j) for j in i] for i in baker])
 B1=np.array([[1,0,0,0],
@@ -167,7 +167,7 @@ P3=np.array([[1,1,1,1,1],
              [1,1,1,1,1],
              [1,1,1,1,1]])
 P4=np.array([[1,1,1],[100,100,1],[1,100,1]])
-kansas=open('kansas_sar.txt').read()
+kansas=open('Datos/kansas_sar.txt').read()
 kansas = [item.split() for item in kansas.split('\n')[:-1]]
 kansas=np.array([[int(j) for j in i] for i in kansas])
 comunidades=one_mode_blockmodeling_structural(kansas_SAR,B4,P3)

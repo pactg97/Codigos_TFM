@@ -147,10 +147,10 @@ supreme_court=np.array([[1,1,1,1,1,0,0,0,0],
                         [0,0,0,0,1,1,1,1,1],
                         [0,0,0,0,1,1,1,1,1],
                         [0,0,0,0,1,1,1,1,1]])
-baker=open('baker.txt').read()
+baker=open('Datos/baker.txt').read()
 baker = [item.split() for item in baker.split('\n')[:-1]]
 baker=np.array([[int(j) for j in i] for i in baker])
-baker2=open('baker2.txt').read()
+baker2=open('Datos/baker2.txt').read()
 baker2 = [item.split() for item in baker2.split('\n')[:-1]]
 baker2=np.array([[int(j) for j in i] for i in baker2])
 B1=np.array([[1,1,0],[0,1,1]])

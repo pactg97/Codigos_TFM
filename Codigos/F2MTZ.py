@@ -220,11 +220,11 @@ M1=np.array([[0,5,0,0,0,1,2,3,3,4,1,"*",2,0,0],[0,4,0,0,3,0,4,3,3,0,0,"*",4,2,0]
    [0,2,1,2,2,2,1,1,1,0,1,1,4,0,1],[0,1,1,2,2,0,0,0,2,3,1,1,4,1,2]])
 
 G1=nx.complete_graph(36)
-matriz_C=open('matriz_C.txt').read()
+matriz_C=open('Datos/matriz_C.txt').read()
 matriz_C = [item.split() for item in matriz_C.split('\n')[:-1]]
 matriz_C=np.array([[int(float(j)) for j in i] for i in matriz_C])
 G2=nx.complete_graph(20)
-aristas=open('grafo.txt').read()
+aristas=open('Datos/grafo.txt').read()
 aristas= [item.split() for item in aristas.split('\n')[:-1]]
 aristas=[tuple([int(i[0])-1,int(i[1])-1]) for i in aristas]
 G3=nx.Graph()
