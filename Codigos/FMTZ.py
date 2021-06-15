@@ -239,4 +239,4 @@ for i in range(N):
 G7=nx.relabel_nodes(G4,mapping)
 nx.draw_shell(G7,with_labels=True,node_color=colors,node_size=700,font_size=18)
 print(aristas_intra)
-plt.savefig('clique_partition_MTZ.jpg')
+#plt.savefig('clique_partition_MTZ.jpg')
